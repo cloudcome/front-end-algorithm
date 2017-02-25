@@ -2,6 +2,11 @@
   "name": "webroot",
   "version": "0.0.1",
   "dependencies": {
+    "blear.core.selector": {
+      "version": "1.0.8",
+      "from": "blear.core.selector@latest",
+      "resolved": "https://registry.npmjs.org/blear.core.selector/-/blear.core.selector-1.0.8.tgz"
+    },
     "blear.css.function": {
       "version": "1.0.2",
       "from": "blear.css.function@latest",
@@ -11,6 +16,61 @@
       "version": "1.0.11",
       "from": "blear.css.reset@latest",
       "resolved": "http://registry.npm.taobao.org/blear.css.reset/download/blear.css.reset-1.0.11.tgz"
+    },
+    "blear.utils.access": {
+      "version": "1.0.5",
+      "from": "blear.utils.access@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.access/download/blear.utils.access-1.0.5.tgz"
+    },
+    "blear.utils.array": {
+      "version": "1.0.12",
+      "from": "blear.utils.array@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.array/download/blear.utils.array-1.0.12.tgz"
+    },
+    "blear.utils.collection": {
+      "version": "1.0.4",
+      "from": "blear.utils.collection@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.collection/download/blear.utils.collection-1.0.4.tgz"
+    },
+    "blear.utils.compatible": {
+      "version": "1.0.6",
+      "from": "blear.utils.compatible@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.compatible/download/blear.utils.compatible-1.0.6.tgz"
+    },
+    "blear.utils.debug": {
+      "version": "1.0.2",
+      "from": "blear.utils.debug@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.debug/download/blear.utils.debug-1.0.2.tgz"
+    },
+    "blear.utils.json": {
+      "version": "1.0.5",
+      "from": "blear.utils.json@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.json/download/blear.utils.json-1.0.5.tgz"
+    },
+    "blear.utils.number": {
+      "version": "1.0.3",
+      "from": "blear.utils.number@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.number/download/blear.utils.number-1.0.3.tgz"
+    },
+    "blear.utils.object": {
+      "version": "1.0.14",
+      "from": "blear.utils.object@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.object/download/blear.utils.object-1.0.14.tgz"
+    },
+    "blear.utils.random": {
+      "version": "1.0.3",
+      "from": "blear.utils.random@latest",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.random/download/blear.utils.random-1.0.3.tgz"
+    },
+    "blear.utils.string": {
+      "version": "1.0.9",
+      "from": "blear.utils.string@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.string/download/blear.utils.string-1.0.9.tgz"
+    },
+    "blear.utils.typeis": {
+      "version": "1.0.3",
+      "from": "blear.utils.typeis@>=1.0.0 <2.0.0",
+      "resolved": "http://registry.npm.taobao.org/blear.utils.typeis/download/blear.utils.typeis-1.0.3.tgz"
     },
     "coolie.js": {
       "version": "2.1.6",
