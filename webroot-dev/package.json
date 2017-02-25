@@ -2,6 +2,8 @@
   "name": "webroot",
   "version": "0.0.1",
   "dependencies": {
+    "blear.css.function": "^1.0.2",
+    "blear.css.reset": "^1.0.11",
     "coolie.js": "^2.1.6"
   }
 }

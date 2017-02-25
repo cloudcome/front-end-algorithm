@@ -2,6 +2,16 @@
   "name": "webroot",
   "version": "0.0.1",
   "dependencies": {
+    "blear.css.function": {
+      "version": "1.0.2",
+      "from": "blear.css.function@latest",
+      "resolved": "http://registry.npm.taobao.org/blear.css.function/download/blear.css.function-1.0.2.tgz"
+    },
+    "blear.css.reset": {
+      "version": "1.0.11",
+      "from": "blear.css.reset@latest",
+      "resolved": "http://registry.npm.taobao.org/blear.css.reset/download/blear.css.reset-1.0.11.tgz"
+    },
     "coolie.js": {
       "version": "2.1.6",
       "from": "coolie.js@latest",
