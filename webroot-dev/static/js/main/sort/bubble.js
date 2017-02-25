@@ -1,5 +1,5 @@
 /**
- * 文件描述
+ * 冒泡排序
  * @author ydr.me
  * @create 2017-02-25 13:48
  * @update 2017-02-25 13:48
@@ -23,6 +23,12 @@ result1El.innerHTML = bubbleSort(originArr).join(', ');
 result2El.innerHTML = bubbleSort(originArr, true).join(', ');
 
 
+/**
+ * 冒泡排序
+ * @param array {Array} 原始数组
+ * @param [decrease] {Boolean} 是否倒序
+ * @returns {Array}
+ */
 function bubbleSort(array, decrease) {
     var sortedArr = array.concat();
     var outerEnd = 0;
