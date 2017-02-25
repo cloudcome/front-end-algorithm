@@ -31,32 +31,33 @@ result2El.innerHTML = bubbleSort(originArr, true).join(', ');
  */
 function bubbleSort(array, decrease) {
     var sortedArr = array.concat();
+    var outerStart = sortedArr.length - 1;
     var outerEnd = 0;
-    var innerStart = 0;
-    var innerEnd = 0;
 
+    console.time('冒泡排序');
     // 从尾部开始向前走
-    for (var outerStart = sortedArr.length - 1; outerStart > outerEnd; outerStart--) {
+    for (; outerStart > outerEnd; outerStart--) {
 
         // 从头部向尾部走
-        for (innerStart = 0, innerEnd = outerStart; innerStart < innerEnd; innerStart++) {
-            var current = sortedArr[innerStart];
-            var next = sortedArr[innerStart + 1];
+        var innerStart = 0;
+        for (; innerStart < outerStart; innerStart++) {
+            var currentValue = sortedArr[innerStart];
+            var nextValue = sortedArr[innerStart + 1];
 
             // 倒序
             // 将小值放在后面
             if (decrease) {
-                if (current < next) {
-                    sortedArr[innerStart] = next;
-                    sortedArr[innerStart + 1] = current;
+                if (currentValue < nextValue) {
+                    sortedArr[innerStart] = nextValue;
+                    sortedArr[innerStart + 1] = currentValue;
                 }
             }
             // 升序
             // 将小值放在前面
             else {
-                if (current > next) {
-                    sortedArr[innerStart] = next;
-                    sortedArr[innerStart + 1] = current;
+                if (currentValue > nextValue) {
+                    sortedArr[innerStart] = nextValue;
+                    sortedArr[innerStart + 1] = currentValue;
                 }
             }
 
@@ -64,5 +65,6 @@ function bubbleSort(array, decrease) {
 
     }
 
+    console.timeEnd('冒泡排序');
     return sortedArr;
 }
