@@ -1,0 +1,11 @@
+{
+  "name": "webroot",
+  "version": "0.0.1",
+  "dependencies": {
+    "coolie.js": {
+      "version": "2.1.6",
+      "from": "coolie.js@latest",
+      "resolved": "http://registry.npm.taobao.org/coolie.js/download/coolie.js-2.1.6.tgz"
+    }
+  }
+}
