@@ -35,6 +35,7 @@ function insertionSort(array, decrease) {
     var outerStart = 1;
     var outerEnd = sortedArray.length;
 
+    console.time('插入排序算法');
     for (; outerStart < outerEnd; outerStart++) {
         var insertValue = sortedArray[outerStart];
         sortedArray.splice(outerStart, 1);
@@ -56,6 +57,7 @@ function insertionSort(array, decrease) {
         sortedArray.splice(innerStart + 1, 0, insertValue);
     }
 
+    console.timeEnd('插入排序算法');
     return sortedArray;
 }
 

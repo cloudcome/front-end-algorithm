@@ -35,6 +35,7 @@ function selectionSort(array, decrease) {
     var outerStart = 0;
     var outerEnd = sortedArray.length;
 
+    console.time('选择排序');
     for (; outerStart < outerEnd; outerStart++) {
 
         var selectedIndex = outerStart;
@@ -68,6 +69,7 @@ function selectionSort(array, decrease) {
 
     }
 
+    console.timeEnd('选择排序');
     return sortedArray;
 }
 
