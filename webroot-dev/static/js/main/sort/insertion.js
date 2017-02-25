@@ -32,7 +32,29 @@ result2El.innerHTML = insertionSort(originArr, true).join(', ');
 function insertionSort(array, decrease) {
     var sortedArray = array.concat();
 
+    var outerStart = 1;
+    var outerEnd = sortedArray.length;
 
+    for (; outerStart < outerEnd; outerStart++) {
+        var insertValue = sortedArray[outerStart];
+        sortedArray.splice(outerStart, 1);
+
+        var innerStart = outerStart - 1;
+        for (; innerStart >= 0; innerStart--) {
+            var currentValue = sortedArray[innerStart];
+
+            if (decrease) {
+                if (insertValue < currentValue) {
+                    break;
+                }
+            } else {
+                if (insertValue > currentValue) {
+                    break;
+                }
+            }
+        }
+        sortedArray.splice(innerStart + 1, 0, insertValue);
+    }
 
     return sortedArray;
 }
