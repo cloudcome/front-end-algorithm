@@ -40,27 +40,29 @@ function selectionSort(array, decrease) {
         var selectedIndex = outerStart;
         var selectedValue = sortedArray[selectedIndex];
         var innerStart = outerStart + 1;
-        for (; innerStart < outerEnd; innerStart++) {
+        var matchedValue = selectedValue;
+        for (; innerStart <= outerEnd; innerStart++) {
             var currentValue = sortedArray[innerStart];
 
             // 倒序
             // 取大值放在左边
             if (decrease) {
-                if (currentValue > selectedValue) {
+                if (currentValue > matchedValue) {
                     selectedIndex = innerStart;
-                    selectedValue = sortedArray[selectedIndex];
+                    matchedValue = currentValue;
                 }
             }
             // 升序
             // 取小值放在左边
             else {
-                if (currentValue < selectedValue) {
+                if (currentValue < matchedValue) {
                     selectedIndex = innerStart;
-                    selectedValue = sortedArray[selectedIndex];
+                    matchedValue = currentValue;
                 }
             }
 
         }
+        selectedValue = sortedArray[selectedIndex];
         sortedArray[selectedIndex] = sortedArray[outerStart];
         sortedArray[outerStart] = selectedValue;
 
