@@ -36,6 +36,8 @@ function bubbleSort(array, decrease) {
 
     console.time('冒泡排序');
     // 从尾部开始向前走
+    // [11, 21, 31]
+    // 1: [11, 21, <31>]
     for (; outerStart > outerEnd; outerStart--) {
 
         // 从头部向尾部走
